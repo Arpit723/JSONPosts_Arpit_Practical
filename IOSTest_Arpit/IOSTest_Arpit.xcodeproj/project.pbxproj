@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4B9F4B2BDA6C850095D150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F4A2BDA6C850095D150 /* AppDelegate.swift */; };
+		6E4B9F522BDA6C850095D150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9F502BDA6C850095D150 /* Main.storyboard */; };
+		6E4B9F542BDA6C870095D150 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9F532BDA6C870095D150 /* Assets.xcassets */; };
+		6E4B9F572BDA6C870095D150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4B9F552BDA6C870095D150 /* LaunchScreen.storyboard */; };
+		6E4B9F602BDA6E160095D150 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F5F2BDA6E160095D150 /* APIService.swift */; };
+		6E4B9F642BDA6F1B0095D150 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F632BDA6F1B0095D150 /* PostsViewController.swift */; };
+		6E4B9F662BDA6F310095D150 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F652BDA6F310095D150 /* PostsViewModel.swift */; };
+		6E4B9F692BDA6F890095D150 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F682BDA6F890095D150 /* PostModel.swift */; };
+		6E4B9F6C2BDA718E0095D150 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E4B9F6B2BDA718E0095D150 /* Constants.swift */; };
+		6E54EE8F2BDA78A30055EE61 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E54EE8D2BDA78A30055EE61 /* PostTableViewCell.swift */; };
+		6E54EE902BDA78A30055EE61 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E54EE8E2BDA78A30055EE61 /* PostTableViewCell.xib */; };
+		6ECFF7832BDA96A50008D74D /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFF7812BDA96A50008D74D /* LoadingTableViewCell.swift */; };
+		6ECFF7842BDA96A50008D74D /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ECFF7822BDA96A50008D74D /* LoadingTableViewCell.xib */; };
+		6ECFF7872BDAA94A0008D74D /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFF7852BDAA9490008D74D /* PostDetailViewController.swift */; };
+		6ECFF78A2BDB5AEB0008D74D /* RealmDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECFF7892BDB5AEB0008D74D /* RealmDBManager.swift */; };
+		E8BA77AD81DE9B553BF95E14 /* Pods_IOSTest_Arpit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A13BCB73BA359DCE7046BF /* Pods_IOSTest_Arpit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6E4B9F472BDA6C850095D150 /* IOSTest_Arpit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSTest_Arpit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E4B9F4A2BDA6C850095D150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E4B9F512BDA6C850095D150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E4B9F532BDA6C870095D150 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E4B9F562BDA6C870095D150 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E4B9F582BDA6C870095D150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E4B9F5F2BDA6E160095D150 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		6E4B9F632BDA6F1B0095D150 /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		6E4B9F652BDA6F310095D150 /* PostsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		6E4B9F682BDA6F890095D150 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		6E4B9F6B2BDA718E0095D150 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		6E54EE8D2BDA78A30055EE61 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		6E54EE8E2BDA78A30055EE61 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		6ECFF7812BDA96A50008D74D /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		6ECFF7822BDA96A50008D74D /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		6ECFF7852BDAA9490008D74D /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		6ECFF7892BDB5AEB0008D74D /* RealmDBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBManager.swift; sourceTree = "<group>"; };
+		98A13BCB73BA359DCE7046BF /* Pods_IOSTest_Arpit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOSTest_Arpit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF9BAF6ECD2A09E92DC5AAFD /* Pods-IOSTest_Arpit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTest_Arpit.debug.xcconfig"; path = "Target Support Files/Pods-IOSTest_Arpit/Pods-IOSTest_Arpit.debug.xcconfig"; sourceTree = "<group>"; };
+		F10AB3CB72FD8DCB2275E95A /* Pods-IOSTest_Arpit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOSTest_Arpit.release.xcconfig"; path = "Target Support Files/Pods-IOSTest_Arpit/Pods-IOSTest_Arpit.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E4B9F442BDA6C850095D150 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8BA77AD81DE9B553BF95E14 /* Pods_IOSTest_Arpit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		177958E22C9B22FC20ED148F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9BAF6ECD2A09E92DC5AAFD /* Pods-IOSTest_Arpit.debug.xcconfig */,
+				F10AB3CB72FD8DCB2275E95A /* Pods-IOSTest_Arpit.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6E4B9F3E2BDA6C850095D150 = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F492BDA6C850095D150 /* IOSTest_Arpit */,
+				6E4B9F482BDA6C850095D150 /* Products */,
+				177958E22C9B22FC20ED148F /* Pods */,
+				7F90DB8F4C4B1E5D1C49FC30 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E4B9F482BDA6C850095D150 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F472BDA6C850095D150 /* IOSTest_Arpit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E4B9F492BDA6C850095D150 /* IOSTest_Arpit */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F4A2BDA6C850095D150 /* AppDelegate.swift */,
+				6E4B9F612BDA6F1B0095D150 /* ViewControllers */,
+				6E4B9F5E2BDA6E070095D150 /* WebService */,
+				6E4B9F6A2BDA71650095D150 /* Utility */,
+				6E4B9F502BDA6C850095D150 /* Main.storyboard */,
+				6E4B9F532BDA6C870095D150 /* Assets.xcassets */,
+				6E4B9F552BDA6C870095D150 /* LaunchScreen.storyboard */,
+				6E4B9F582BDA6C870095D150 /* Info.plist */,
+			);
+			path = IOSTest_Arpit;
+			sourceTree = "<group>";
+		};
+		6E4B9F5E2BDA6E070095D150 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F672BDA6F7B0095D150 /* Models */,
+				6E4B9F5F2BDA6E160095D150 /* APIService.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		6E4B9F612BDA6F1B0095D150 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6E54EE8C2BDA78630055EE61 /* TableViewCell */,
+				6E4B9F622BDA6F1B0095D150 /* ViewModel */,
+				6E4B9F632BDA6F1B0095D150 /* PostsViewController.swift */,
+				6ECFF7852BDAA9490008D74D /* PostDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6E4B9F622BDA6F1B0095D150 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F652BDA6F310095D150 /* PostsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6E4B9F672BDA6F7B0095D150 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F682BDA6F890095D150 /* PostModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E4B9F6A2BDA71650095D150 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B9F6B2BDA718E0095D150 /* Constants.swift */,
+				6ECFF7892BDB5AEB0008D74D /* RealmDBManager.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6E54EE8C2BDA78630055EE61 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6E54EE8D2BDA78A30055EE61 /* PostTableViewCell.swift */,
+				6E54EE8E2BDA78A30055EE61 /* PostTableViewCell.xib */,
+				6ECFF7812BDA96A50008D74D /* LoadingTableViewCell.swift */,
+				6ECFF7822BDA96A50008D74D /* LoadingTableViewCell.xib */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		7F90DB8F4C4B1E5D1C49FC30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98A13BCB73BA359DCE7046BF /* Pods_IOSTest_Arpit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E4B9F462BDA6C850095D150 /* IOSTest_Arpit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E4B9F5B2BDA6C870095D150 /* Build configuration list for PBXNativeTarget "IOSTest_Arpit" */;
+			buildPhases = (
+				43952AAD0B1E706482F5479C /* [CP] Check Pods Manifest.lock */,
+				6E4B9F432BDA6C850095D150 /* Sources */,
+				6E4B9F442BDA6C850095D150 /* Frameworks */,
+				6E4B9F452BDA6C850095D150 /* Resources */,
+				9180C35A01E2DE1D5A085CBC /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOSTest_Arpit;
+			productName = IOSTest_Arpit;
+			productReference = 6E4B9F472BDA6C850095D150 /* IOSTest_Arpit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E4B9F3F2BDA6C850095D150 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					6E4B9F462BDA6C850095D150 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 6E4B9F422BDA6C850095D150 /* Build configuration list for PBXProject "IOSTest_Arpit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E4B9F3E2BDA6C850095D150;
+			productRefGroup = 6E4B9F482BDA6C850095D150 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E4B9F462BDA6C850095D150 /* IOSTest_Arpit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E4B9F452BDA6C850095D150 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4B9F572BDA6C870095D150 /* LaunchScreen.storyboard in Resources */,
+				6ECFF7842BDA96A50008D74D /* LoadingTableViewCell.xib in Resources */,
+				6E4B9F542BDA6C870095D150 /* Assets.xcassets in Resources */,
+				6E4B9F522BDA6C850095D150 /* Main.storyboard in Resources */,
+				6E54EE902BDA78A30055EE61 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		43952AAD0B1E706482F5479C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOSTest_Arpit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9180C35A01E2DE1D5A085CBC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTest_Arpit/Pods-IOSTest_Arpit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-IOSTest_Arpit/Pods-IOSTest_Arpit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-IOSTest_Arpit/Pods-IOSTest_Arpit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E4B9F432BDA6C850095D150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E54EE8F2BDA78A30055EE61 /* PostTableViewCell.swift in Sources */,
+				6ECFF78A2BDB5AEB0008D74D /* RealmDBManager.swift in Sources */,
+				6E4B9F662BDA6F310095D150 /* PostsViewModel.swift in Sources */,
+				6E4B9F692BDA6F890095D150 /* PostModel.swift in Sources */,
+				6E4B9F642BDA6F1B0095D150 /* PostsViewController.swift in Sources */,
+				6ECFF7872BDAA94A0008D74D /* PostDetailViewController.swift in Sources */,
+				6E4B9F602BDA6E160095D150 /* APIService.swift in Sources */,
+				6E4B9F4B2BDA6C850095D150 /* AppDelegate.swift in Sources */,
+				6ECFF7832BDA96A50008D74D /* LoadingTableViewCell.swift in Sources */,
+				6E4B9F6C2BDA718E0095D150 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6E4B9F502BDA6C850095D150 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4B9F512BDA6C850095D150 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E4B9F552BDA6C870095D150 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E4B9F562BDA6C870095D150 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E4B9F592BDA6C870095D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E4B9F5A2BDA6C870095D150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E4B9F5C2BDA6C870095D150 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9BAF6ECD2A09E92DC5AAFD /* Pods-IOSTest_Arpit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G7NC8X3YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IOSTest_Arpit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baba.test.IOSTest-Arpit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E4B9F5D2BDA6C870095D150 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F10AB3CB72FD8DCB2275E95A /* Pods-IOSTest_Arpit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5G7NC8X3YU;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = IOSTest_Arpit/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.baba.test.IOSTest-Arpit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E4B9F422BDA6C850095D150 /* Build configuration list for PBXProject "IOSTest_Arpit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4B9F592BDA6C870095D150 /* Debug */,
+				6E4B9F5A2BDA6C870095D150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E4B9F5B2BDA6C870095D150 /* Build configuration list for PBXNativeTarget "IOSTest_Arpit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E4B9F5C2BDA6C870095D150 /* Debug */,
+				6E4B9F5D2BDA6C870095D150 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E4B9F3F2BDA6C850095D150 /* Project object */;
+}
