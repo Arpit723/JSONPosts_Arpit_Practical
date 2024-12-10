@@ -43,20 +43,21 @@ class PostsViewController: UIViewController {
         self.title = "Posts"
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         setUPTableView()
-            let posts =  RealmDBManager.shared.getObjectsFromDatabse()
-            if posts.count == 0 {
+//            let posts =  RealmDBManager.shared.getObjectsFromDatabse()
+//            if posts.count == 0 {
                 refresh()
-            } else {
-                self.postsViewModel.postsArray = posts
-                self.postsViewModel.computeExistingStartAndEnd()
-                self.updateUI(posts: posts)
-            }
+//            } else {
+//                self.postsViewModel.postsArray = posts
+//                self.postsViewModel.computeExistingStartAndEnd()
+//                self.updateUI(posts: posts)
+//            }
     }
     
     func setUPTableView() {
         tableViewPosts.estimatedRowHeight = 100.0
         // Do any additional setup after loading the view.
         tableViewPosts.register(UINib(nibName: "PostTableViewCell", bundle: nil), forCellReuseIdentifier: "PostTableViewCell")
+        //#Pagination
         tableViewPosts.register(UINib(nibName: "LoadingTableViewCell", bundle: nil), forCellReuseIdentifier: "LoadingTableViewCell")
         refreshControl.addTarget(self, action: #selector(refresh), for: .valueChanged)
         tableViewPosts.addSubview(refreshControl)
@@ -69,6 +70,7 @@ extension PostsViewController {
     
     
     @objc func refresh() {
+        //#Pagination
         let (start, end) = self.postsViewModel.inititaliseStartAndEnd()
         self.apiCallToGetPosts(start: start, end:end)
     }
@@ -94,6 +96,7 @@ extension PostsViewController {
     
     func updateUI(posts: [Post]) {
         print("Posts count \(posts.count)")
+        //#Pagination
         let loadingCell = tableViewPosts.cellForRow(at: IndexPath(row: self.postsViewModel.postsArray.count, section: 0)) as? LoadingTableViewCell
         loadingCell?.activityIndicator.stopAnimating()
         tableViewPosts.reloadData()
@@ -116,6 +119,7 @@ extension PostsViewController : UITableViewDelegate, UITableViewDataSource {
             cell.lblTitle.text = post.title
             return cell
         } else {
+            //#Pagination
             let cell = tableView.dequeueReusableCell(withIdentifier: "LoadingTableViewCell", for: indexPath) as! LoadingTableViewCell
             cell.activityIndicator.startAnimating()
             self.fetchMoreData()
@@ -142,6 +146,7 @@ extension PostsViewController : UITableViewDelegate, UITableViewDataSource {
             return
         }
         PostsViewController.fetchInProgress = true
+        //#Pagination
         let (start, end) = self.postsViewModel.computeNextStartAndEnd()
         self.apiCallToGetPosts(start: start, end: end)
     }

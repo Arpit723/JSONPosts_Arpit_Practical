@@ -31,12 +31,15 @@ class PostsViewModel {
                     self.shouldLoadMoreData = true
                 }
                 if pageStart == 0 {
-                    RealmDBManager.shared.deleteObjectsFromDatabse()
-                    RealmDBManager.shared.addObjectsToDatabse(data: posts)
+                    self.postsArray = posts
+
+//                    RealmDBManager.shared.deleteObjectsFromDatabse()
+//                    RealmDBManager.shared.addObjectsToDatabse(data: posts)
                 } else {
-                    RealmDBManager.shared.addObjectsToDatabse(data: posts)
+                    self.postsArray += posts
+//                    RealmDBManager.shared.addObjectsToDatabse(data: posts)
                 }
-                self.postsArray =  RealmDBManager.shared.getObjectsFromDatabse()
+//                self.postsArray =  RealmDBManager.shared.getObjectsFromDatabse()
                 self.computeExistingStartAndEnd()
                 completion(.success(posts))
             case .failure(let error):
